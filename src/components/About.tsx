@@ -6,7 +6,14 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Results-driven Software Engineer with hands-on production experience in Java Spring Boot microservices, MERN stack development, and AWS cloud deployment. Proven track record of delivering impactful systems — reduced compliance manual effort by 80% and improved frontend performance by 30%. Experienced in CI/CD pipelines, REST API design, and AI/ML applications (YOLOv8, OpenCV). Co-author of 4 IEEE-published research papers on Physics-Informed Neural Networks.
+          Software Engineer at CalVant with production expertise in Java Spring
+          Boot, AWS, and the MERN stack. I focus on the full deployment
+          lifecycle—managing <strong>CI/CD pipelines</strong> while hardening
+          backends against <strong>DDoS attacks</strong> and conducting
+          deep-dive <strong>security audits</strong>. From improving software
+          performance by 50% to co-authoring 4 IEEE research papers on
+          Physics-Informed Neural Networks, I am dedicated to building secure,
+          scalable, and academically-backed technical solutions.
         </p>
       </div>
     </div>

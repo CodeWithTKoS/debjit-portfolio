@@ -136,18 +136,13 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">Java</div>
                 <div className="what-tags">Spring Boot</div>
-                <div className="what-tags">Spring MVC</div>
-                <div className="what-tags">Spring Security</div>
                 <div className="what-tags">Microservices</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Express.js</div>
                 <div className="what-tags">REST APIs</div>
                 <div className="what-tags">MongoDB</div>
                 <div className="what-tags">MySQL</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">AWS (EC2, VPC)</div>
+                <div className="what-tags">AWS (EC2, VPC) Docker Jenkins CI/CD</div>
                 <div className="what-tags">Jenkins CI/CD</div>
-                <div className="what-tags">Docker</div>
+                <div className="what-tags"></div>
               </div>
               <div className="what-arrow"></div>
             </div>
