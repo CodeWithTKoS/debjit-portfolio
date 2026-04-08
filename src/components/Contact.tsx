@@ -23,12 +23,20 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/debjitdas50"
+              href="https://github.com/debjit-arch"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
-              Github <MdArrowOutward />
+              Github Work <MdArrowOutward />
+            </a>
+            <a
+              href="https://github.com/CodeWithTKoS"
+              target="_blank"
+              data-cursor="disable"
+              className="contact-social"
+            >
+              Github Personal <MdArrowOutward />
             </a>
             <a
               href="https://www.linkedin.com/in/tkos007"
