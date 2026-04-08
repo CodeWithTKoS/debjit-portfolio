@@ -1,0 +1,150 @@
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Debjit Das}} & Email: \href{mailto:debjitdas50@gmail.com}{debjitdas50@gmail.com}\\
+  \href{https://www.linkedin.com/in/tkos007/}{LinkedIn: linkedin.com/in/tkos007} & Mobile: \href{tel:+916289114793}{+91 6289114793} \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section*{Profile Summary}
+Results-driven \textbf{Software Engineer} with hands-on production experience in \textbf{Java Spring Boot microservices}, \textbf{MERN stack} development, and \textbf{AWS cloud deployment}. Proven track record of delivering impactful systems --- reduced compliance manual effort by \textbf{80\%} and improved frontend performance by \textbf{30\%}. Experienced in \textbf{CI/CD pipelines}, \textbf{REST API} design, and \textbf{AI/ML} applications (YOLOv8, OpenCV). Co-author of \textbf{4 IEEE-published research papers} on Physics-Informed Neural Networks. Seeking to build scalable, high-performance backend and full-stack systems.
+
+%-----------FULLTIME EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer}{Oct 2025 -- Present}
+{Consultants Factory}{Onsite / Bengaluru, KA}
+\resumeItemListStart
+\resumeItemWithoutTitle{Design and maintain \textbf{CI/CD pipelines} (Jenkins) to automate build, test, and deployment workflows, reducing release cycle time and minimizing manual deployment errors.}
+\resumeItemWithoutTitle{Develop and maintain \textbf{Java Spring Boot microservices} following RESTful architecture using \textbf{Spring Data JPA} and \textbf{Spring Security} to build scalable, secure backend services.}
+\resumeItemWithoutTitle{Provision and configure \textbf{AWS EC2 instances} for server setup, application deployment, runtime monitoring, and rollback strategies ensuring production stability.}
+\resumeItemWithoutTitle{Manage cloud deployments across \textbf{AWS} (EC2, VPC, DocumentDB, Amplify), handling versioned releases and cloud infrastructure configuration.}
+\resumeItemWithoutTitle{Collaborate with cross-functional teams to integrate microservices via \textbf{Eureka Naming Server} and \textbf{API Gateway}, troubleshoot deployment issues, and optimize system performance.}
+\resumeItemListEnd
+
+%-----------INTERNSHIP EXPERIENCE-----------------
+\resumeSubheading
+{Full Stack Software Development Intern}{Aug 2025 -- Oct 2025}
+{Consultants Factory}{Onsite / Bengaluru, KA}
+\resumeItemListStart
+\resumeItemWithoutTitle{Built a production-grade \textbf{Governance, Risk, and Compliance (GRC)} web application using \textbf{React.js}, \textbf{Node.js (Express)}, and \textbf{MongoDB}, helping organizations meet ISO standards --- reducing manual compliance work by \textbf{80\%}.}
+\resumeItemWithoutTitle{Implemented \textbf{JWT-based authentication} and \textbf{role-based access control (RBAC)} using Context API; improved front-end performance by \textbf{30\%} through API call optimization and component-level tuning.}
+\resumeItemWithoutTitle{Developed \textbf{REST APIs} for data management, document verification, and an auto-audit feature; integrated secure dashboards for policy management and risk assessment workflows.}
+\resumeItemWithoutTitle{Collaborated with backend and UI teams to design and deliver interactive dashboards and scalable API architecture for GRC tooling.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Automatic Number Plate Recognition (ANPR) System:}
+    Engineered an AI-powered real-time license plate detection and recognition pipeline using \textbf{YOLOv8} for object detection and \textbf{PaddleOCR} for text extraction. Integrated \textbf{OpenCV} for frame-level processing and \textbf{Pandas}/\textbf{NumPy} for structured data output and analysis.\\
+    \textit{Technologies: Python, YOLOv8, EasyOCR, OpenCV, Pandas, NumPy}
+
+    \item \textbf{Football Match Video Analytics:}
+    Built an end-to-end video analytics pipeline for football match analysis. Applied \textbf{YOLOv8} for player and ball detection, \textbf{K-Means clustering} for jersey color segmentation, \textbf{Optical Flow} for camera motion compensation, and \textbf{OpenCV} for perspective transformation to compute real-world player motion statistics.\\
+    \textit{Technologies: Python, YOLOv8, OpenCV, Scikit-learn, K-Means, Optical Flow}
+
+    \item \textbf{IEEE Research Publications (4):}
+    \begin{itemize}
+        \item \href{https://ieeexplore.ieee.org/document/10870849}{Time-Dependent Eikonal Solution Using Physics-Informed Neural Networks}
+        \item \href{https://ieeexplore.ieee.org/document/10870712}{Physics-Informed Neural Networks (PINNs) for Burgers' Equation}
+        \item \href{https://ieeexplore.ieee.org/document/10870453}{Solution of Allen--Cahn Equation Using Physics-Informed Neural Networks}
+        \item \href{https://ieeexplore.ieee.org/document/10963054}{IoT-based Covid-19 Detection and Patient Monitoring in Remote Regions using UAV}
+    \end{itemize}
+\end{itemize}
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{Java, Python, TypeScript, JavaScript, SQL, NoSQL, NodeJS}
+\resumeSubItem{Frameworks \& Libraries}{Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Microservices, Eureka Server, API Gateway, Maven, ReactJS, ExpressJS, Mongoose, Axios, JWT, Context API, NumPy, Pandas, Scikit-Learn, OpenCV, TensorFlow, YOLO, Multer}
+\resumeSubItem{Cloud \& DevOps}{AWS EC2, AWS VPC, AWS DocumentDB, AWS Amplify, CI/CD Pipelines, Jenkins, Build Pipelines, Deployment Automation, Docker}
+\resumeSubItem{Databases}{MySQL, MongoDB, AWS DocumentDB}
+\resumeSubItem{Tools}{Git, VS Code, Bruno, Postman, MS Office}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Meghnad Saha Institute of Technology (MSIT)}{Kolkata, WB, India}
+{Bachelor of Technology -- Information Technology; \textbf{CGPA: 8.45 / 10}}{2021 -- 2025}
+\resumeSubheading
+{St. Augustine's Day School}{Kolkata, WB, India}
+{ISC -- Science + Computer; \textbf{86.83\%}}{2019 -- 2020}
+\resumeSubheading
+{St. Augustine's Day School}{Kolkata, WB, India}
+{ICSE -- Science; \textbf{80\%}}{2017 -- 2018}
+\resumeSubHeadingListEnd
+
+\end{document}
