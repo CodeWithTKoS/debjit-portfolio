@@ -11,7 +11,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           three: ["three", "@react-three/fiber", "@react-three/drei", "@react-three/rapier", "@react-three/postprocessing"],
-          gsap: ["gsap", "gsap-trial"],
+          gsap: ["gsap"],
           vendor: ["react", "react-dom"],
         },
       },
